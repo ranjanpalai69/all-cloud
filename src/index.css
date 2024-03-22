@@ -1,13 +1,130 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cont{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.bgcolor{
+  background-color: #EAF3E8 !important;
+}
+
+.custom-carousel {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Adjust the height as needed */
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 24px;
+}
+
+.flow-img{
+  width: 8rem;
+  height: 4rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.circle-cont{
+  height:auto;
+  width:100%;
+  background-color:#333;
+  padding-bottom: 4rem;
+}
+
+.service-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0rem 2rem;
+}
+
+.service-cont > div {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  height: 150px;
+}
+
+.whyus-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.whyus-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.whyus-cont > div {
+  width: 30%; /* Initially, take 30% width */
+  max-width: 30%; /* Maximum width of 30% */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border: 1px solid #bbf9ad;
+}
+
+.whyus-img {
+  width: 35%;
+  height: 40%;
+  margin: auto;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 991px) {
+  .whyus-cont > div {
+    max-width: 45%; /* Adjust as needed for medium screens */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .whyus-cont > div {
+    width: 100%; /* Show 1 div per row on smaller screens */
+    max-width: 100%;
+  }
+}
+
+/* Media queries for medium and small screens */
+@media screen and (max-width: 991px) {
+  .service-cont > div {
+    width: 45%; /* Show 2 cards per row */
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .service-cont > div {
+    width: 100%; /* Show 1 card per row */
+  }
 }
